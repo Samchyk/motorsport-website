@@ -7,17 +7,17 @@ import GlassCard from '@/components/GlassCard';
 const supercars = [
   {
     id: 1,
-    name: 'Ferrari F8 Tributo',
+    name: 'V8 Biturbó Szuperautó',
     specs: {
       power: '720 PS',
       acceleration: '0-100 km/h 2.9s',
       topSpeed: '340 km/h',
-      engine: 'V12 3.9L',
+      engine: 'V8 3.9L Twin-Turbo',
     },
     description:
-      'A Ferrari F8 Tributo a csúcs teljesítmény és elegancia kombinációja. Ikonikus V12 motorja és dinamikus kezelése példátlan vezetési élményt nyújt.',
+      'A csúcs teljesítmény és elegancia kombinációja. Ikonikus V8 biturbó motorja és dinamikus kezelése példátlan vezetési élményt nyújt.',
     highlights: [
-      'Legújabb Forza szuszpenzió',
+      'Aktív magnetoreológiás szuszpenzió',
       'Adaptív kormányzás',
       'Carbon kerékpárok',
       'F1-inspirálta aerodinamika',
@@ -25,7 +25,7 @@ const supercars = [
   },
   {
     id: 2,
-    name: 'Lamborghini Huracán',
+    name: 'V10 Atmoszférikus Szuperautó',
     specs: {
       power: '657 PS',
       acceleration: '0-100 km/h 2.9s',
@@ -33,7 +33,7 @@ const supercars = [
       engine: 'V10 5.2L',
     },
     description:
-      'A Lamborghini Huracán a maximális teljesítmény és agresszív design szimbóluma. Lenyűgöző V10 motorja és könnyű szerkezete épített a történészeti teljesítmény.',
+      'A maximális teljesítmény és agresszív design szimbóluma. Lenyűgöző V10 atmoszférikus motorja és könnyű szerkezete történelmi szintű teljesítményt épít.',
     highlights: [
       'Puristikus kabin',
       'Aktív aerodinamika',
@@ -43,7 +43,7 @@ const supercars = [
   },
   {
     id: 3,
-    name: 'McLaren 720S',
+    name: 'V8 Twin-Turbo Szuperautó',
     specs: {
       power: '710 PS',
       acceleration: '0-100 km/h 2.9s',
@@ -51,7 +51,7 @@ const supercars = [
       engine: 'V8 4.0L Twin-Turbo',
     },
     description:
-      'A McLaren 720S a brit mérnöki innovációt képviseli. Twin-turbo motorja, könnyű carbon keret és prímár váltója a legfejlettebb versenyautós technológiát beépítik.',
+      'A modern mérnöki innovációt képviseli. Twin-turbo motorja, könnyű carbon keret és prímár váltója a legfejlettebb versenyautós technológiát beépítik.',
     highlights: [
       'Carbon könnyűsúly',
       'Proactive dinamika',
@@ -61,7 +61,7 @@ const supercars = [
   },
   {
     id: 4,
-    name: 'Porsche 911 GT3',
+    name: 'Flat-6 GT Versenyautó',
     specs: {
       power: '525 PS',
       acceleration: '0-100 km/h 3.2s',
@@ -69,7 +69,7 @@ const supercars = [
       engine: 'Flat-6 4.0L',
     },
     description:
-      'A Porsche 911 GT3 a pályaverseny autó a legjavított közúti forma. Direkt kormányzása, légcsavaros motor és kézi váltója az autentikus versenyautós élményt nyújt.',
+      'A pályaversenyző autó a legjavított közúti formában. Direkt kormányzása, atmoszférikus boxer motor és kézi váltója az autentikus versenyautós élményt nyújt.',
     highlights: [
       'Pálya-optimalizált szuszpenzió',
       'Aktív aerodinamika',

@@ -120,7 +120,6 @@ export default function Privacy() {
               </p>
               <p className="text-foreground/70 mt-4">
                 Email: info@hungarymotorsport.com<br />
-                Telefon: +36 XX XXX XXXX
               </p>
             </div>
           </SectionReveal>

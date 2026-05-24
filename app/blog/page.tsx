@@ -9,6 +9,12 @@ import { blogPosts } from '@/lib/blog';
 export default function Blog() {
   const featured = blogPosts[0];
 
+  const categoryCounts = blogPosts.reduce<Record<string, number>>((acc, post) => {
+    acc[post.category] = (acc[post.category] ?? 0) + 1;
+    return acc;
+  }, {});
+  const categories = Object.entries(categoryCounts);
+
   return (
     <main className="min-h-screen bg-background">
       <Header />
@@ -97,13 +103,20 @@ export default function Blog() {
           </SectionReveal>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {['Versenytechnika', 'Szuperautók', 'Oktatás', 'Autótesztek'].map((cat, idx) => (
-              <SectionReveal key={idx} direction="up" delay={idx * 0.05}>
-                <GlassCard className="text-center p-8">
-                  <div className="text-4xl mb-4">📁</div>
-                  <h3 className="font-semibold text-foreground">{cat}</h3>
-                  <p className="text-xs text-foreground/50 mt-2">Felfedezés →</p>
-                </GlassCard>
+            {categories.map(([cat, count], idx) => (
+              <SectionReveal key={cat} direction="up" delay={idx * 0.05}>
+                <Link
+                  href={`/blog/category/${encodeURIComponent(cat)}`}
+                  className="block h-full"
+                >
+                  <GlassCard hover className="text-center p-8 h-full">
+                    <div className="text-4xl mb-4">📁</div>
+                    <h3 className="font-semibold text-foreground">{cat}</h3>
+                    <p className="text-xs text-foreground/50 mt-2">
+                      {count} cikk · Felfedezés →
+                    </p>
+                  </GlassCard>
+                </Link>
               </SectionReveal>
             ))}
           </div>
