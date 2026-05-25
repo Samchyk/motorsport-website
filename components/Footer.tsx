@@ -94,7 +94,7 @@ export default function Footer() {
           className="flex flex-col sm:flex-row justify-between items-center gap-4"
         >
           <p className="text-xs text-foreground/50">
-            © {currentYear} Hungarymotorsport . conntacts@hungarymotorsport.com
+            © {currentYear} Hungarymotorsport . contacts@hungarymotorsport.com
           </p>
         </motion.div>
       </div>

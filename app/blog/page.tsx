@@ -92,37 +92,6 @@ export default function Blog() {
           </div>
         </div>
       </section>
-
-      {/* Categories */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-background">
-        <div className="max-w-7xl mx-auto">
-          <SectionReveal className="text-center mb-12">
-            <h2 className="text-4xl font-black text-foreground mb-4 text-balance">
-              Kategóriák
-            </h2>
-          </SectionReveal>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {categories.map(([cat, count], idx) => (
-              <SectionReveal key={cat} direction="up" delay={idx * 0.05}>
-                <Link
-                  href={`/blog/category/${encodeURIComponent(cat)}`}
-                  className="block h-full"
-                >
-                  <GlassCard hover className="text-center p-8 h-full">
-                    <div className="text-4xl mb-4">📁</div>
-                    <h3 className="font-semibold text-foreground">{cat}</h3>
-                    <p className="text-xs text-foreground/50 mt-2">
-                      {count} cikk · Felfedezés →
-                    </p>
-                  </GlassCard>
-                </Link>
-              </SectionReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
